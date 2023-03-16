@@ -1,5 +1,6 @@
 console.log("Hello from Node.js");
 
-const fs = require("fs");
+import { writeFileSync } from "fs";
+// const fs = require("fs"); This is the same as the impot that is above (done in ES modules)
 
-fs.writeFileSync("hello.txt", "Hello from Node.js Again");
+writeFileSync("hello.txt", "Hello from Node.js Again");
