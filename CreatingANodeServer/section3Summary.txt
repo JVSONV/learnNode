@@ -1,0 +1,20 @@
+Program Lifecycle & Event Loop
+1. Node.js runs non-blocking JS code and uses an event-driven code ("Event Loop") for running your logic.
+2. A Node program exits as soon as there is no more work to do. Note: The createServer() event never finishes by default.
+
+Asynchronous Code
+3. JS code is non-blocking.
+4. Use callbacks and events to Order Changes.
+
+Requests & Responses
+5. Parse request data in chunks. (Streams & Buffers)
+6. Avoid "double responses".
+
+Node.js & Core Modules
+7. Node.js ships with multiple core modules. (http, fs, path, ...)
+8. Core modules can be imported into any file to be used there.
+9. Import via require. ("module")
+
+The Node Module System
+10. Import via require ('./path-to-file') for custom files or require('module') for core & third party modules.
+11. Export via module.exports or just exports (for multiple exports).
